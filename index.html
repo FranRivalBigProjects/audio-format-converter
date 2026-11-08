@@ -2,13 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    <meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Audio Format Converter - Convert to WAV</title>
-<meta name="description" content='Convert MP3, OGG, M4A, AAC or FLAC audio to WAV directly in your browser.'>
-<meta name="google-site-verification" content="REPLACE_ME">
+<title>Convert to WAV Online Free – Convert Audio to WAV (MP3, M4A, OGG, FLAC)</title>
+<meta name="description" content="Convert to WAV in seconds. Free online tool to convert audio to WAV from MP3, M4A, OGG, AAC or FLAC. No upload, no signup: it runs 100% in your browser.">
+<link rel="canonical" href="https://franrivalbigprojects.github.io/audio-format-converter/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Convert to WAV Online Free – Convert Audio to WAV">
+<meta property="og:description" content="Convert MP3, M4A, OGG, AAC or FLAC to WAV directly in your browser. Free, private, no upload.">
+<meta property="og:url" content="https://franrivalbigprojects.github.io/audio-format-converter/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebApplication",
+      "name":"Convert to WAV – Audio to WAV Converter",
+      "url":"https://franrivalbigprojects.github.io/audio-format-converter/",
+      "applicationCategory":"MultimediaApplication",
+      "operatingSystem":"Any (web browser)",
+      "description":"Free online tool to convert audio to WAV from MP3, M4A, OGG, AAC or FLAC, directly in the browser.",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"How do I convert audio to WAV?","acceptedAnswer":{"@type":"Answer","text":"Choose your audio file, click Convert to WAV, then download the result. The conversion happens in your browser, so your file is never uploaded."}},
+        {"@type":"Question","name":"Which formats can I convert to WAV?","acceptedAnswer":{"@type":"Answer","text":"MP3, M4A, AAC, OGG and FLAC are supported, as long as your browser can play them."}},
+        {"@type":"Question","name":"Is it free and private?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is free, needs no signup, and your audio never leaves your device."}},
+        {"@type":"Question","name":"Does converting to WAV improve quality?","acceptedAnswer":{"@type":"Answer","text":"No. WAV is uncompressed, so it keeps the decoded quality of the original but cannot restore detail already lost in lossy formats like MP3."}}
+      ]
+    }
+  ]
+}
+</script>
 <style>
     :root{
       --bg:#0d0f11;--panel:#15181b;--line:#262b30;--text:#d8dee3;
@@ -17,7 +46,9 @@
     *{box-sizing:border-box;}
     body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospace;line-height:1.5;padding:32px 16px 64px;}
     .wrap{max-width:640px;margin:0 auto;}
-    h1{font-size:20px;margin:0 0 6px;color:#fff;font-weight:600;}
+    h1{font-size:22px;margin:0 0 6px;color:#fff;font-weight:600;}
+    h2{font-size:16px;color:#fff;margin:28px 0 8px;}
+    h3{font-size:14px;color:var(--accent2);margin:16px 0 4px;}
     .desc{color:var(--muted);font-size:13px;margin:0 0 24px;}
     .panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px;margin-bottom:20px;}
     label{display:block;font-size:12px;color:var(--muted);margin:14px 0 6px;}
@@ -30,6 +61,8 @@
     .result{margin-top:18px;padding:14px;border:1px dashed var(--line);border-radius:4px;font-size:14px;min-height:20px;}
     .result .big{font-size:16px;color:var(--accent2);font-weight:600;display:block;margin-bottom:8px;}
     .note{color:var(--muted);font-size:12px;margin-top:20px;}
+    .content p, .content li{font-size:13px;color:var(--text);}
+    .content ol, .content ul{padding-left:20px;}
     a{color:var(--accent);}
     audio{width:100%;margin-top:10px;}
     a.dl{display:inline-block;margin-top:10px;background:#1c2226;padding:8px 12px;border-radius:4px;text-decoration:none;}
@@ -37,17 +70,51 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Audio Format Converter</h1>
-  <p class="desc">Upload an audio file to convert it to WAV format.</p>
+  <h1>Convert to WAV – Free Online Audio to WAV Converter</h1>
+  <p class="desc">Convert audio to WAV from MP3, M4A, AAC, OGG or FLAC. Free, no upload, runs in your browser.</p>
   <div class="panel">
-    
     <label for="file">Audio file</label>
     <input type="file" id="file" accept="audio/*">
-  
     <button onclick="run()">Convert to WAV</button>
     <div class="result" id="result"></div>
   </div>
   <p class="note">Browsers can only encode audio to WAV natively without external libraries, so output is WAV regardless of input format.</p>
+
+  <div class="content">
+    <h2>How to convert audio to WAV</h2>
+    <ol>
+      <li>Select your audio file (MP3, M4A, AAC, OGG or FLAC).</li>
+      <li>Click <strong>Convert to WAV</strong>.</li>
+      <li>Preview the result and click <strong>Download WAV</strong>.</li>
+    </ol>
+
+    <h2>Convert to WAV from any format</h2>
+    <h3>MP3 to WAV</h3>
+    <p>Convert MP3 to WAV to get an uncompressed file for editing in DAWs, video editors or hardware that only accepts WAV.</p>
+    <h3>M4A / AAC to WAV</h3>
+    <p>Turn M4A or AAC recordings (voice memos, iPhone audio) into standard WAV files.</p>
+    <h3>OGG to WAV</h3>
+    <p>Convert OGG Vorbis audio to WAV for games, sample libraries and audio tools.</p>
+    <h3>FLAC to WAV</h3>
+    <p>Decode FLAC to WAV without losing quality, ready for editors that do not support FLAC.</p>
+
+    <h2>Why use this WAV converter?</h2>
+    <ul>
+      <li><strong>Private:</strong> your audio is processed locally and never uploaded.</li>
+      <li><strong>Free:</strong> no signup, no watermark, no limits.</li>
+      <li><strong>Fast:</strong> no waiting for uploads or server queues.</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>How do I convert audio to WAV?</h3>
+    <p>Choose your file, click Convert to WAV and download the result. Everything happens in your browser.</p>
+    <h3>Which formats can I convert to WAV?</h3>
+    <p>MP3, M4A, AAC, OGG and FLAC, as long as your browser can play them.</p>
+    <h3>Is it free and private?</h3>
+    <p>Yes. It is free, needs no signup, and your audio never leaves your device.</p>
+    <h3>Does converting to WAV improve quality?</h3>
+    <p>No. WAV is uncompressed, so it preserves the decoded audio, but it cannot restore detail already lost in lossy formats like MP3.</p>
+  </div>
 </div>
 <script>
 
